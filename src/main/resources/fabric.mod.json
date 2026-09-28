@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "keyboardplace",
+  "version": "${version}",
+  "name": "Keyboard Place",
+  "description": "Hold use and keep building. Removes the four-tick pause between block placements and can fill a square patch around the block you are placing on, so one held mouse button lays down a lot of blocks at once. Client side only, singleplayer by default.",
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.keyboardplace.KeyboardPlaceClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "keyboardplace.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
